@@ -22,5 +22,5 @@ CUDA_VISIBLE_DEVICES=$1 python benchmark_trt_fp.py --input-model ${TFTRT_FP32} -
 echo "===========   RUN SANITY ON FP16   ==========="
 CUDA_VISIBLE_DEVICES=$1 python benchmark_trt_fp.py --input-model ${TFTRT_FP16} --predict
 
-echo "===========   RUN SANITY ON IN8   ==========="
+echo "===========   RUN SANITY ON INT8   ==========="
 CUDA_VISIBLE_DEVICES=$1 python benchmark_trt_fp.py --input-model ${TFTRT_INT8} --predict
