@@ -1,3 +1,4 @@
+#!/bin/bash
 TFTRT_FP32="resnet50_saved_model_TFTRT_FP32"
 TFTRT_FP16="resnet50_saved_model_TFTRT_FP16"
 TFTRT_INT8="resnet50_saved_model_TFTRT_INT8"
