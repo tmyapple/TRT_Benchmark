@@ -17,10 +17,10 @@ CUDA_VISIBLE_DEVICES=$1 python convert_model.py --mode INT8
 saved_model_cli show --dir ${TFTRT_INT8} --tag_set serve --signature_def "serving_default"
 
 echo "===========   RUN SANITY ON FP32   ==========="
-CUDA_VISIBLE_DEVICES=$1 python benchmark_trt_fp.py --input-model ${TFTRT_FP32} --predict
+CUDA_VISIBLE_DEVICES=$1 python benchmark_trt.py --input-model ${TFTRT_FP32} --predict
 
 echo "===========   RUN SANITY ON FP16   ==========="
-CUDA_VISIBLE_DEVICES=$1 python benchmark_trt_fp.py --input-model ${TFTRT_FP16} --predict
+CUDA_VISIBLE_DEVICES=$1 python benchmark_trt.py --input-model ${TFTRT_FP16} --predict
 
 echo "===========   RUN SANITY ON INT8   ==========="
-CUDA_VISIBLE_DEVICES=$1 python benchmark_trt_fp.py --input-model ${TFTRT_INT8} --predict
+CUDA_VISIBLE_DEVICES=$1 python benchmark_trt.py --input-model ${TFTRT_INT8} --predict
