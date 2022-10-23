@@ -64,30 +64,29 @@ Training and exporting to ONNX
 
    #. | ImageFolder dataset - each class (person) has its own directory
       | Validation data is packed .bin files
-   
-      <code>
-      data_dir/
-      ├── agedb_30.bin
-      ├── cfp_fp.bin
-      ├── lfw.bin
-      ├── person0/
-      ├── person1/
-      ├── ...
-      └── personlast/
-      </code>
-   
+
+      .. code-block::
+         data_dir/
+         ├── agedb_30.bin
+         ├── cfp_fp.bin
+         ├── lfw.bin
+         ├── person0/
+         ├── person1/
+         ├── ...
+         └── personlast/
+
    #. | MxNetRecord - train.rec and train.idx files. This is the format of insightface datasets.
       | Validation data is packed .bin files
    
-      <code>
-      data_dir/
-      ├── agedb_30.bin
-      ├── cfp_fp.bin
-      ├── lfw.bin
-      ├── train.idx
-      └── train.rec
-      </code>
-   
+      .. code-block::
+
+         data_dir/
+         ├── agedb_30.bin
+         ├── cfp_fp.bin
+         ├── lfw.bin
+         ├── train.idx
+         └── train.rec
+
 #. | Training:
 
    | Start training with the following command:
