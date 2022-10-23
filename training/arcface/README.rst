@@ -62,32 +62,32 @@ Training and exporting to ONNX
    | For more information on obtraining datasets `here <https://github.com/hailo-ai/insightface/tree/develop/recognition/arcface_torch#download-datasets-or-prepare-datasets>`_
    | The repository supports the following formats:
 
-##. | ImageFolder dataset - each class (person) has its own directory
-    | Validation data is packed .bin files
-
-    <code>
-    data_dir/
-    ├── agedb_30.bin
-    ├── cfp_fp.bin
-    ├── lfw.bin
-    ├── person0/
-    ├── person1/
-    ├── ...
-    └── personlast/
-    </code>
-
-##. | MxNetRecord - train.rec and train.idx files. This is the format of insightface datasets.
-    | Validation data is packed .bin files
-
-    <code>
-    data_dir/
-    ├── agedb_30.bin
-    ├── cfp_fp.bin
-    ├── lfw.bin
-    ├── train.idx
-    └── train.rec
-    </code>
-
+   ##. | ImageFolder dataset - each class (person) has its own directory
+       | Validation data is packed .bin files
+   
+       <code>
+       data_dir/
+       ├── agedb_30.bin
+       ├── cfp_fp.bin
+       ├── lfw.bin
+       ├── person0/
+       ├── person1/
+       ├── ...
+       └── personlast/
+       </code>
+   
+   ##. | MxNetRecord - train.rec and train.idx files. This is the format of insightface datasets.
+       | Validation data is packed .bin files
+   
+       <code>
+       data_dir/
+       ├── agedb_30.bin
+       ├── cfp_fp.bin
+       ├── lfw.bin
+       ├── train.idx
+       └── train.rec
+       </code>
+   
 #. | Training:
 
    | Start training with the following command:
