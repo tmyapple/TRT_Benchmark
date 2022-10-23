@@ -20,6 +20,12 @@ Environment Preparations
 
 #. | Build the docker image:
 
+   .. code-block:: HTML
+      :name:validation
+
+      <span class="bold>sample HTML</span>
+
+
    .. raw:: html
       :name:validation
 
