@@ -1,5 +1,5 @@
+blank_issues_enabled: false
 contact_links:
-  blank_issues_enabled: false
   - name: 💬 Need Help? Check Our Support Guide!
     url: https://github.com/tmyapple/TRT_Benchmark/blob/main/.github/SUPPORT.md
     about: Please refer to our support guide before opening an issue.
